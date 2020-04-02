@@ -9,7 +9,7 @@ module.exports = {
     },
 
     async create(request, response){
-        const {name, email, watsapp, uf } = request.body;
+        const {name, email, watsapp, city, uf } = request.body;
 
     const id = generateUniqueId();
    
@@ -18,7 +18,7 @@ module.exports = {
             name,
             email,
             watsapp,
-            
+            city,
             uf,
    })
    
