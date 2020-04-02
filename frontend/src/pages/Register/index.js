@@ -17,12 +17,20 @@ export default function Register() {
     async function handleRegister(e) {
         e.preventDefault();
 
+        
+
         const data = {
             name,
             email,
             watsapp,
             uf,
         };
+        console.log({
+            name,
+            email,
+            watsapp,
+            uf,
+        })
 
         try {
         const response = await api.post('ongs', data);
@@ -42,7 +50,7 @@ export default function Register() {
 
                 <Link className="back-link" to="/">
                     <FiArrowLeft size={16} color="#E02041" />
-                    Não tenho cadastro.
+                   Home
                 </Link>
 
 
